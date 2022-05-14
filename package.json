@@ -12,6 +12,9 @@
   },
   "scripts": {
     "start": "node index.js",
-    "test": "./node_modules/.bin/mocha ./test/test.js"
+    "dev": "nodemon index.js",
+    "test": "./node_modules/.bin/mocha ./test/test.js",
+    "docker:build": "docker build . -t nodeapp_test",
+    "docker:run": "docker run nodeapp_test"
   }
 }
